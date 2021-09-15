@@ -1,0 +1,14 @@
+body{
+    background-color: paleturquoise;
+    direction: rtl;
+}
+table{
+    border: 2px solid black;
+    float: left;
+}
+header{
+    text-align: center;
+}
+.Address{
+    float: right;
+}

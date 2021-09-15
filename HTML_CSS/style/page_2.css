@@ -1,0 +1,78 @@
+body {
+  background:lightslategray;
+}
+.site > div {
+  background-color:lightslategray;
+  font-size: 10px;
+  margin: 2px;
+}
+.site {
+  width: 100%;
+  height: 600px;
+  background-color:lightslategray;
+  text-align: center;
+  margin: 10px auto;
+  display: grid;
+  /* position: absolute; */
+  grid-template-rows:
+    [header-row-start]
+    1fr
+    [header-row-end main-row-start nav-row-start]
+    repeat(2, 3fr)
+    [main-row-end foot-row-start nav-row-end]
+    0.5fr
+    [foot-row-end];
+
+  grid-template-columns:
+    [header-col-start main-col-start foot-col-start]
+    3fr
+    [main-col-end nav-col-start]
+    1fr
+    [header-col-end foot-col-end nav-col-end];
+}
+.site > div {
+  background-color: white;
+  font-size: 2em;
+  margin: 1px;
+}
+.block-5 {
+  grid-row: foot-row-start / foot-row-end;
+  grid-column: foot-col-start / foot-col-end;
+}
+.block-2 {
+  grid-row: main-row-start / main-row-end;
+  grid-column: main-col-start / main-col-end;
+ 
+}
+.block-1 {
+  grid-row: header-row-start / header-row-end;
+  grid-column: header-col-start / header-col-end;
+}
+.block-4 {
+  grid-row: nav-row-start / nav-row-end;
+  grid-column: nav-col-start / nav-col-end;
+}
+.header a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.header a:hover {
+  background-color: burlywood;
+  color: black;
+}
+#logo{
+  width: 40px;
+  height: 40px;
+}
+iframe{
+  width: 400px;
+  height: 480px;
+  float: right;
+}
+ul li{
+  float: left;
+}
+
+
